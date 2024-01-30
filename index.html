@@ -14,16 +14,15 @@
         #parent {
             width: 100%;
             height: 100vh;
-            /* background-image: url("background.jpg");
-            background-size: cover; */
             background-color: rgba(0, 0, 0, 0.365);
             display: flex;
             justify-content: center;
             align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             
         }
         #child{
-            background-color: rgba(243, 234, 234, 0.84);
+            background-color: #FFF;
             padding: 60px 60px 10px 60px;
             border-radius: 10px;
             transition: all 1s;
@@ -50,7 +49,8 @@
 <body>
     <div id="parent">
         <div id="child">
-            <h1>Video Frame Extractor</h1>
+            <h1>Video Frames Extractor AI</h1>
+            <p style="text-align: center;">(Video to Photos)</p>
             <input type="file" id="videoInput" accept="video/*">
             <button onclick="extractFrames()">Extract Frames</button> <br>
             <p>note:- Start the server first</p> 
